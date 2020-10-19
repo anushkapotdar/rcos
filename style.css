@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+    /*visibility: hidden;*/
+}
+
+#node12AM:hover {
+    fill: blue;
+  }
+
+/*svg text {
+    display: none;
+}
+
+svg g:hover text {
+    display: block;
+}
+*/
+/*
+h1.title:hover {
+    visibility: visible;
+  }
+  */

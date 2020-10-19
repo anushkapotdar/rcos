@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>    
+        <title>RPI Safety Alert</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>RPI Safety Alert</h1>
+        <script src='https://d3js.org/d3.v4.min.js'></script>
+        <script>
+        //d3.select('h1').style('color', 'darkblue');
+        </script>
+    </body>
+
+    <svg width="960" height="500">
+        <g transform="translate(80,80)">
+            <circle id="node12AM" r="80" stroke="black" fill="white"
+            onmouseover="evt.target.setAttribute('fill', 'blue');" 
+            onmouseout="evt.target.setAttribute('fill','red');"
+            data-label="Test-Label"></circle>
+            <text dx="-20">12 AM</text>
+        </g>
+        <g transform="translate(200,80)">
+            <circle r="20" stroke="black" fill="white"></circle>
+            <text dx="-20">2 AM</text>
+        </g>
+        <g transform="translate(380,80)">
+            <circle r="30" stroke="black" fill="white"></circle>
+            <text dx="-20">10 PM</text>
+        </g>
+    </svg>
+</html>
+

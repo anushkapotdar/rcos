@@ -4,8 +4,19 @@
         <title>RPI Safety Alert</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
+    <style>
+        #parent #popup {
+          display: none;
+        }
+        #parent:hover #popup {
+          display: block;
+        }
+    </style>
     <body>
-        <h1>RPI Safety Alert</h1>
+        <div id="parent">
+            <h1>RPI Safety Alert</h1>
+            <div id="popup">Write some text here.</div>
+        </div>
         <script src='https://d3js.org/d3.v4.min.js'></script>
         <script>
         //d3.select('h1').style('color', 'darkblue');
@@ -126,4 +137,24 @@
             <text dx="-20">11 AM</text>
         </g>
     </svg>
+    <head>
+        <style>
+            #parent #popup {
+              display: none;
+            }
+            #parent:hover #popup {
+              display: block;
+            }
+        </style>
+        </head>
+        
+        <body>
+        
+        
+        <div id="parent">
+            Hover/mouseover test.
+            <div id="popup">Write some text here.</div>
+        </div>
+        
+        </body> 
 </html>

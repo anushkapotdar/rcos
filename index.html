@@ -4,14 +4,14 @@
         <title>RPI Safety Alert</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-    <style>
+    <!--<style>
         #parent #popup {
           display: none;
         }
         #parent:hover #popup {
           display: block;
         }
-    </style>
+    </style> -->
     <body>
         <div id="parent">
             <h1>RPI Safety Alert</h1>
@@ -146,15 +146,27 @@
               display: block;
             }
         </style>
-        </head>
-        
-        <body>
-        
-        
-        <div id="parent">
+    </head>
+    <body>
+        <!--<div id="parent">
             Hover/mouseover test.
             <div id="popup">Write some text here.</div>
-        </div>
-        
-        </body> 
+        </div>-->
+<style>
+    svg text {
+        display: none;
+    }
+
+    svg g:hover text {
+        display: block;
+    }
+</style>
+
+    <svg width="511" height="15">
+            <rect fill="#555555" height="15" stroke="#000000" width="510"></rect>
+            <g>
+              <rect class="bar" x="2" y="2" width="434" height="11" fill="#97C115" data-label="Test-Label"></rect>
+              <text x="0" y="15">Label 1</text>
+            </g>
+        </svg>                
 </html>

@@ -1,4 +1,8 @@
-h1{
+html {
+    filter: invert(100%);
+  }
+
+  h1{
     text-align: center;
     /*visibility: hidden;*/
 }

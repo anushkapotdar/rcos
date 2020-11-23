@@ -15,7 +15,9 @@
     <body>
         <div id="parent">
             <h1>RPI Safety Alert</h1>
-            <div id="popup">Write some text here.</div>
+            <div id="popup">- black circle size (# of incidents in hour)</div>
+            <div id="popup">- red circle (RPI student involved)</div>
+            <div id="popup">- yellow circle size (# of incidents with firearms in hour)</div>
         </div>
         <script src='https://d3js.org/d3.v4.min.js'></script>
         <script>
@@ -169,4 +171,18 @@
               <text x="0" y="15">Label 1</text>
             </g>
         </svg>                
+</html>
+<html>
+
+<body onload="myFunction()">
+  This is last updated time <span id="demo"></span>
+  
+  <script>
+    function myFunction() {
+      var x = document.lastModified;
+      document.getElementById("demo").innerHTML = x;
+    }
+  </script>
+</body>
+
 </html>
